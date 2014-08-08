@@ -14,28 +14,28 @@ app.get('/forward', function(req, res) {
   res.set('Content-Type', 'text/xml');
 
   // if the user pressed #1
-  if(req.param == 1) {
+  if(req.param('Digits') == 1) {
     // dial ashley's phone number
     res.send('<Response><Dial>248-765-5225</Dial></Response>');
   }
 
-  if(req.param('Digit') == 2) {
+  if(req.param('Digits') == 2) {
     // dial ashley's phone number
     res.send('<Response><Dial>517-230-1212</Dial></Response>');
   }
 
-  if(req.param('Digit') == 3) {
+  if(req.param('Digits') == 3) {
     // dial ashley's phone number
     res.send('<Response><Dial>248-709-5552</Dial></Response>');
   }
 
-  if(req.param('Digit') == 4) {
+  if(req.param('Digits') == 4) {
     // dial ashley's phone number
     res.send('<Response><Dial>248-881-7460</Dial></Response>');
   }
 
     // allow heather and I to record a new greeting.
-  if(req.param('Digit') == 9) {
+  if(req.param('Digits') == 9) {
     res.send('<Response><Say>With great power comes great responsibility</Say></Response>');
   }
 
