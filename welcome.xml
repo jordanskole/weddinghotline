@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
-    <Play>welcome.mp3</Play>
+    <Play>http://jordanskole.github.io/weddinghotline/welcome.mp3</Play>
     <Say>
       Hello. My name is Anne. Anne Droid.
       I am a wedding application to help make your adventure in Traverse City an exceptional experience.
