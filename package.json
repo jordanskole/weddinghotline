@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "express": "4.x",
-    "moment": "^2.8.1"
+    "moment": "^2.8.1",
+    "xml": "0.0.12"
   }
 }
