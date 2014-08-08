@@ -10,8 +10,11 @@
         <Say>
             If you would like to be connected to a wedding docent, please listen to the following options:
             For Maid of Honor Ashley Venturini, press 1.
-            For Father of the Groom David Skole, press 2.
+            For the Best Man Ben Skole, press 2
             For Mother of the Bride, Dede Read, press 3.
+            For Mother of the Groom Janet Skole, press 4.
+            For Father of the Bride Bob Read, press 5.
+            For Father of the Groom David Skole, press 6.
         </Say>
     </Gather>
 </Response>

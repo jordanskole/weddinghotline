@@ -1,0 +1,32 @@
+{
+  "1": {
+    "name":"Ashley Venturini",
+    "number":"248-765-5225",
+    "desc":"Maid of Honor"
+  },
+  "2": {
+    "name":"Ben Skole",
+    "number":"517-449-5581",
+    "desc":"Best Man"
+  },
+  "3": {
+    "name":"Dede Read",
+    "number":"248-709-5552",
+    "desc":"Mother of the Bride"
+  },
+  "4": {
+    "name":"Janet Skole",
+    "number":"517-449-2771",
+    "desc":"Mother of the Groom"
+  },
+  "5": {
+    "name":"Bob Read",
+    "number":"248-505-6233",
+    "desc":"Father of the Bride"
+  },
+  "6": {
+    "name":"David Skole",
+    "number":"517-230-1212",
+    "desc":"Father of the Groom"
+  }
+}

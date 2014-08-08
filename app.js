@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var moment = require('moment');
+var phonetree = require('./phonetree.json');
 
 
 // we use this in heroku to set the directory
@@ -12,34 +13,8 @@ app.get('/forward', function(req, res) {
 
   // set the response to be an XML document
   res.set('Content-Type', 'text/xml');
-
-  // if the user pressed #1
-  if(req.param('Digits') == 1) {
-    // dial ashley's phone number
-    res.send('<Response><Dial>248-765-5225</Dial></Response>');
-  }
-
-  if(req.param('Digits') == 2) {
-    // dial ashley's phone number
-    res.send('<Response><Dial>517-230-1212</Dial></Response>');
-  }
-
-  if(req.param('Digits') == 3) {
-    // dial ashley's phone number
-    res.send('<Response><Dial>248-709-5552</Dial></Response>');
-  }
-
-  if(req.param('Digits') == 4) {
-    // dial ashley's phone number
-    res.send('<Response><Dial>248-881-7460</Dial></Response>');
-  }
-
-    // allow heather and I to record a new greeting.
-  if(req.param('Digits') == 9) {
-    res.send('<Response><Say>With great power comes great responsibility</Say></Response>');
-  }
-
-  // got something else, return them to the main menu
+  reciever = phonetree[req.param('Digits')];
+  res.send('<Response><Say>Now calling ' + reciever.name +'</Say><Dial>' + reciever.number + '</Dial><Message>Hope you got the answers you needed. Here is '+reciever.name+'\'s number for safe keeping: ' + reciever.number +'</Message></Response>');
 
 });
 
