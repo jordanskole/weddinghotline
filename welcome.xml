@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
-    <Play>welcome.m4a</Play>
+    <Play>welcome.mp3</Play>
+    <Say>
+      Hello. My name is Anne. Anne Droid.
+      I am a wedding application to help make your adventure in Traverse City an exceptional experience.
+      Please feel free to call me at any time to connect with a wedding docent.
+    </Say>
 </Response>
