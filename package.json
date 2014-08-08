@@ -1,0 +1,9 @@
+{
+  "name": "wedding-hotline",
+  "description": "A wedding hotline for guests to get up to date information about the Read/Skole wedding.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x"
+  }
+}
