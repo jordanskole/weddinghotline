@@ -14,7 +14,7 @@ app.get('/forward', function(req, res) {
   // set the response to be an XML document
   res.set('Content-Type', 'text/xml');
   reciever = phonetree[req.param('Digits')];
-  res.send('<Response><Say>Now calling ' + reciever.name +'</Say><Dial>' + reciever.number + '</Dial><Message>Hope you got the answers you needed. Here is '+reciever.name+'\'s number for safe keeping: ' + reciever.number +'</Message></Response>');
+  res.send('<Response><Say>Now calling ' + reciever.name +'</Say><Dial>' + reciever.number + '</Dial><Message to="' + req.param('Caller') + '">Hope you got the answers you needed. Here is '+reciever.name+'\'s number for safe keeping: ' + reciever.number +'</Message></Response>');
 
 });
 
