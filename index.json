@@ -1,0 +1,14 @@
+{
+  "1":{
+    "url":"/docents.xml"
+  },
+  "2":{
+    "url":"/events"
+  },
+  "3":{
+    "url":"/weather"
+  },
+  "4":{
+    "url":"/record.xml"
+  }
+}

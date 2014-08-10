@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
-    <Gather method="GET" action="/forward" numDigits="1" timeout="10" finishOnKey="#">
+    <Gather method="GET" action="/index" numDigits="1" timeout="10" finishOnKey="#">
       <Play>http://jordanskole.github.io/weddinghotline/welcome.mp3</Play>
-      <Say voice="alice">
-        Hello. My name is Anne. Anne Droid.
-        I am a wedding application to help make your adventure in Traverse City an exceptional experience.
-        Please feel free to call me at any time to connect with a wedding docent.
-      </Say>
-        <Say>
-            If you would like to be connected to a wedding docent, please listen to the following options:
-            For Maid of Honor Ashley Venturini, press 1.
-            For the Best Man Ben Skole, press 2
-            For Mother of the Bride, Dede Read, press 3.
-            For Mother of the Groom Janet Skole, press 4.
-            For Father of the Bride Bob Read, press 5.
-            For Father of the Groom David Skole, press 6.
-        </Say>
+      <Play>http://jordanskole.github.io/weddinghotline/news.mp3</Play>
+      <Play>http://jordanskole.github.io/weddinghotline/extensions.mp3</Play>
     </Gather>
 </Response>
