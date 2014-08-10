@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
     <Gather method="GET" action="/index" numDigits="1" timeout="10" finishOnKey="#">
-      <Play>http://jordanskole.github.io/weddinghotline/welcome.mp3</Play>
-      <Play>http://jordanskole.github.io/weddinghotline/news.mp3</Play>
-      <Play>http://jordanskole.github.io/weddinghotline/extensions.mp3</Play>
+      <Play>/welcome.mp3</Play>
     </Gather>
 </Response>
