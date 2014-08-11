@@ -68,7 +68,7 @@ app.get('/weather', function(req, res){
       // content is read, do what you want
       // set the response to be an XML document
       res.set('Content-Type', 'text/xml');
-      res.send('<Response><Say>The weather is currently ' + weather.currently.summary +'. Over the next couple of hours you should expect ' + weather.hourly.summary + '</Say><Redirect>/welcome.xml</Redirect></Response>');
+      res.send('<Response><Say>The weather is currently ' + weather.currently.summary +'. Over the next couple of hours you should expect ' + weather.hourly.summary + '</Say><Redirect method="GET">/welcome.xml</Redirect></Response>');
     });
   });
 });
