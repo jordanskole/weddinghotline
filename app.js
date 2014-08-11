@@ -46,7 +46,7 @@ app.get('/events', function(req, res) {
   res.set('Content-Type', 'text/xml');
   today = events[moment().format('dddd')];
 
-  res.send('<Response><Play>' + today.url + '</Play><Redirect>/welcome.xml</Redirect></Response>');
+  res.send('<Response><Play>' + today.url + '</Play><Redirect method="GET">/welcome.xml</Redirect></Response>');
 });
 
 /*
@@ -81,7 +81,7 @@ app.get('/weather', function(req, res){
 app.get('/record', function(req, res){
   // set the response to be an XML document
   res.set('Content-Type', 'text/xml');
-  res.send('');
+  res.send('<Response><Say>Please leave a recording after the beep. You may press # when finished</Say><Record/><Say>I\'m sorry. I didn\'t hear anything</Say></Response>');
 });
 
 
