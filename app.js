@@ -81,7 +81,7 @@ app.get('/weather', function(req, res){
 app.get('/record', function(req, res){
   // set the response to be an XML document
   res.set('Content-Type', 'text/xml');
-  res.send('<Response><Say>Please leave a recording after the beep. You may press # when finished</Say><Record/><Say>I\'m sorry. I didn\'t hear anything</Say></Response>');
+  res.send('<Response><Say>Please leave a recording after the beep. You may press # when finished</Say><Record finishOnKey="#"/><Say>I\'m sorry. I didn\'t hear anything</Say></Response>');
 });
 
 
