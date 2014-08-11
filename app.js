@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var moment = require('moment');
-var http = require('http');
+var https = require('https');
 var phonetree = require('./phonetree.json');
 var indextree = require('./index.json');
 
@@ -51,8 +51,8 @@ app.get('/events', function(req, res) {
  *
  */
 app.get('/weather', function(req, res){
-  var weather;
-  http.get('http://api.openweathermap.org/data/2.5/weather?q=Traverse%20City,%20MI', function(response){
+  var weather = '';
+  https.get('https://api.forecast.io/forecast/08cb6e69b1db76f992c08f8586e9cda1/44.7681,-85.6222', function(response){
     response.on('data', function (chunk){
         // chunk contains data read from the stream
         // - save it to content
@@ -60,6 +60,7 @@ app.get('/weather', function(req, res){
       });
 
     response.on( 'end' , function() {
+      weather = JSON.parse(weather);
       // content is read, do what you want
       // set the response to be an XML document
       res.set('Content-Type', 'text/xml');
