@@ -22,6 +22,11 @@ app.get('/index', function(req, res){
   res.send('<Response><Redirect method="GET">' + reciever.url + '</Redirect></Response>');
 });
 
+app.get('/jurassic', function(req, res) {
+  res.set('Content-Type', 'text/xml');
+  res.send('<Response><Play>/messages/jurassic.mp3</Play><Redirect method="GET">/welcome.xml</Redirect></Response>');
+});
+
 /*
  *
  *
