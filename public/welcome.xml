@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
     <Gather method="GET" action="/index" numDigits="1" timeout="10" finishOnKey="#">
-      <Play>/welcome.mp3</Play>
+      <Play>/messages/welcome.mp3</Play>
+      <Play>/messages/cutesttwo.mp3</Play>
+      <Play>/messages/prompts.mp3</Play>
     </Gather>
 </Response>

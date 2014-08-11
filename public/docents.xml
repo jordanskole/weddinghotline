@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Response>
     <Gather method="GET" action="/forward" numDigits="1" timeout="10" finishOnKey="#">
-      <Say>
-        For the Maid of Honor, Ashley Venturini press 1.
-        For the Best Man, Ben Skole press 2.
-        For the Mother of the Bride, Dede Read press 3.
-        For the Mother of the Groom, Janet Skole press 4.
-        For the Father of the Bride, Bobby Read press 5.
-        For the Father of the Groom, David Skole press 6.
-      </Say>
+      <Play>/messages/directory.mp3</Play>
     </Gather>
 </Response>

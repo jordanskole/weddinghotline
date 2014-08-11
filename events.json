@@ -1,23 +1,30 @@
 {
   "Monday": {
-    "url":""
+    "url":"/messages/thursday.mp3",
+    "text":""
   },
   "Tuesday": {
-    "url":""
+    "url":"/messages/thursday.mp3",
+    "text":""
   },
   "Wednesday": {
-    "url":""
+    "url":"/messages/thursday.mp3",
+    "text":""
   },
   "Thursday": {
-    "url":""
+    "url":"/messages/thursday.mp3",
+    "text":""
   },
   "Friday": {
-    "url":""
+    "url":"/messages/friday.mp3",
+    "text":""
   },
   "Saturday": {
-    "url":""
+    "url":"/messages/saturday.mp3",
+    "text":""
   },
   "Sunday": {
-    "url":""
+    "url":"/messages/sunday.mp3",
+    "text":""
   }
 }
