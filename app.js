@@ -4,7 +4,7 @@ var moment = require('moment');
 var https = require('https');
 var phonetree = require('./phonetree.json');
 var indextree = require('./index.json');
-
+var events = require('./events.json');
 
 // we use this in heroku to set the directory
 process.env.PWD = process.cwd();
@@ -42,7 +42,11 @@ app.get('/forward', function(req, res) {
  *
  */
 app.get('/events', function(req, res) {
+  // set the response to be an XML document
+  res.set('Content-Type', 'text/xml');
+  today = events[moment().format('dddd')];
 
+  res.send('<Response><Play>' + today.url + '</Play><Redirect>/welcome.xml</Redirect></Response>');
 });
 
 /*
@@ -64,7 +68,7 @@ app.get('/weather', function(req, res){
       // content is read, do what you want
       // set the response to be an XML document
       res.set('Content-Type', 'text/xml');
-      res.send('<Response><Say>The weather is currently ' + weather.currently.summary +'. Over the next couple of hours you should expect ' + weather.hourly.summary + '</Say></Response>');
+      res.send('<Response><Say>The weather is currently ' + weather.currently.summary +'. Over the next couple of hours you should expect ' + weather.hourly.summary + '</Say><Redirect>/welcome.xml</Redirect></Response>');
     });
   });
 });
