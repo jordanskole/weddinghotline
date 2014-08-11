@@ -9,6 +9,6 @@
     "url":"/weather"
   },
   "4":{
-    "url":"/record.xml"
+    "url":"/record"
   }
 }
